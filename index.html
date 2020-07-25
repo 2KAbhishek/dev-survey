@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dev Survey</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Dev Survey</h1>
+            <p id="description">A survey for devs by devs.</p>
+        </header>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="john@doe.com" required />
+
+            <label for="age" id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="5" max="95" placeholder="22" />
+
+            <label for="profession">Profession</label>
+            <select name="profession" id="dropdown" required>
+                <option value="None" disabled selected>Select One</option>
+                <option value="learner">Learner</option>
+                <option value="maker">Maker</option>
+                <option value="explorer">Explorer</option>
+                <option value="all">All Of These</option>
+            </select>
+
+            <p>What OS do you prefer?</p>
+            <label><input type="radio" name="os" value="linux" />Linux</label>
+            <label><input type="radio" name="os" value="macos" />Mac OS</label>
+            <label><input type="radio" name="os" value="windows" />Windows</label>
+            <label><input type="radio" name="os" value="other" />Other</label>
+
+            <p>Which methods do you use to learn?</p>
+            <label><input type="checkbox" name="learning" value="books" />Books</label>
+            <label><input type="checkbox" name="learning" value="documentation" />Docs</label>
+            <label><input type="checkbox" name="learning" value="videos" />Videos</label>
+            <label><input type="checkbox" name="learning" value="projects" />Projects</label>
+            <label><input type="checkbox" name="learning" value="articles" />Articles</label>
+
+            <p>What else do you have to say?</p>
+            <textarea name="extra" placeholder="Say something..."></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>
